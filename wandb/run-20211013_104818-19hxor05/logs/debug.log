@@ -1,0 +1,15 @@
+2021-10-13 10:48:18,429 INFO    MainThread:62076 [wandb_init.py:_log_setup():307] Logging user logs to wandb/run-20211013_104818-19hxor05/logs/debug.log
+2021-10-13 10:48:18,430 INFO    MainThread:62076 [wandb_init.py:_log_setup():308] Logging internal logs to wandb/run-20211013_104818-19hxor05/logs/debug-internal.log
+2021-10-13 10:48:18,430 INFO    MainThread:62076 [wandb_setup.py:_flush():68] enabling code saving by default
+2021-10-13 10:48:18,430 INFO    MainThread:62076 [wandb_setup.py:_flush():68] setting env: {}
+2021-10-13 10:48:18,430 INFO    MainThread:62076 [wandb_setup.py:_flush():68] multiprocessing start_methods=fork,spawn,forkserver
+2021-10-13 10:48:18,430 WARNING MainThread:62076 [wandb_setup.py:_flush():68] Ignoring settings passed to wandb.setup() which has already been configured.
+2021-10-13 10:48:18,430 INFO    MainThread:62076 [wandb_setup.py:_flush():68] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f717cc0f550>
+2021-10-13 10:48:18,517 WARNING MainThread:62076 [wandb_setup.py:__init__():213] Ignoring settings passed to wandb.setup() which has already been configured.
+2021-10-13 10:48:24,554 ERROR   MainThread:62076 [wandb_init.py:init():502] error
+Traceback (most recent call last):
+  File "/home/indika/anaconda3/envs/myenv/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 479, in init
+    run = wi.init()
+  File "/home/indika/anaconda3/envs/myenv/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 385, in init
+    message = ret.response.check_version_response.message
+AttributeError: 'NoneType' object has no attribute 'response'

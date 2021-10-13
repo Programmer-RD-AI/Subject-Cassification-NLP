@@ -1,0 +1,21 @@
+2021-10-13 10:48:19,101 INFO    MainThread:66093 [internal.py:wandb_internal():62] W&B internal server running at pid: 66093
+2021-10-13 10:48:19,102 DEBUG   HandlerThread:66093 [handler.py:handle():47] handle: request
+2021-10-13 10:48:19,102 DEBUG   HandlerThread:66093 [handler.py:handle_request():56] handle_request: login
+2021-10-13 10:48:19,103 DEBUG   SenderThread:66093 [sender.py:send():89] send: request
+2021-10-13 10:48:19,108 DEBUG   SenderThread:66093 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-13 10:48:19,527 DEBUG   SenderThread:66093 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-13 10:48:19,539 INFO    SenderThread:66093 [sender.py:send_request_login():135] Login server info: {'cliVersionInfo': {'min_cli_version': '0.8.20', 'max_cli_version': '0.12.4'}}
+2021-10-13 10:48:19,549 DEBUG   HandlerThread:66093 [handler.py:handle():47] handle: header
+2021-10-13 10:48:19,549 DEBUG   HandlerThread:66093 [handler.py:handle():47] handle: request
+2021-10-13 10:48:19,549 DEBUG   SenderThread:66093 [sender.py:send():89] send: header
+2021-10-13 10:48:19,549 INFO    WriterThread:66093 [datastore.py:open_for_write():76] open: wandb/run-20211013_104818-19hxor05/run-19hxor05.wandb
+2021-10-13 10:48:19,549 DEBUG   HandlerThread:66093 [handler.py:handle_request():56] handle_request: check_version
+2021-10-13 10:48:19,553 DEBUG   HandlerThread:66093 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): pypi.org:443
+2021-10-13 10:48:24,879 DEBUG   HandlerThread:66093 [connectionpool.py:_make_request():452] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 60763
+2021-10-13 10:48:31,025 WARNING MainThread:66093 [internal.py:wandb_internal():116] Internal process interrupt: 1
+2021-10-13 10:48:37,031 WARNING MainThread:66093 [internal.py:is_dead():284] Internal process exiting, parent pid 62076 disappeared
+2021-10-13 10:48:37,031 ERROR   MainThread:66093 [internal.py:wandb_internal():112] Internal process shutdown.
+2021-10-13 10:48:37,552 INFO    SenderThread:66093 [sender.py:finish():536] shutting down sender
+2021-10-13 10:48:37,552 INFO    WriterThread:66093 [datastore.py:close():257] close: wandb/run-20211013_104818-19hxor05/run-19hxor05.wandb
+2021-10-13 10:48:37,976 INFO    HandlerThread:66093 [handler.py:finish():274] shutting down handler
+2021-10-13 10:48:37,977 INFO    MainThread:66093 [internal.py:handle_exit():137] Internal process exited
